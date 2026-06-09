@@ -15,6 +15,5 @@ public class Test {
 		Student s=(Student)bn.getBean("obj");
 //		System.out.println(s.getId()+" "+s.getName()+" "+s.getMarks());
 		System.out.println(s);
-		System.out.println("Hello World");
 	}
 }
