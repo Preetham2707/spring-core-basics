@@ -11,10 +11,6 @@ public class Student implements Serializable{
 	private int id;
 	private String name;
 	private double marks;
-	public Student() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 	public Student(int id, String name, double marks) {
 		super();
 		this.id = id;
@@ -46,27 +42,3 @@ public class Student implements Serializable{
 	
 	
 }
-/*
- * Before Spring
-
-Normally in Java, if you want a Student object:
-
-Student s = new Student();
-s.setId(1000);
-s.setName("Ram");
-s.setMarks(80);
-
-You create the object yourself.
-
-With Spring
-
-Instead of creating the object yourself:
-
-Student s = new Student();
-
-You tell Spring:
-
-"You create and manage the object for me."
-
-This is the core idea of Spring.
- */

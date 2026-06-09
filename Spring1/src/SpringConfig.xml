@@ -10,49 +10,12 @@
     <context:annotation-config/>
     <context:component-scan base-package="base.package"/>
     <bean id="obj" class="Bean.Student">
-    <!-- 
-    	SpringConfig.xml
-
-		This file is the most important part.
-		
-		<bean id="obj" class="Bean.Student">
-		
-		Meaning:
-		
-		Spring, create an object of Student class.
-		
-		Spring internally does:
-
-		Student s = new Student();
-		
-		s.setId(1000);
-		s.setName("Ram");
-		s.setMarks(80);
-		
-		for you automatically.
-		
-		What is a Bean?
-		
-		In Spring:
-		
-		A Bean = Object managed by Spring.
-		
-		So this:
-		
-		<bean id="obj" class="Bean.Student">
-		
-		creates a Bean.
-		
-		Bean name:
-		
-		obj
-		
-		Object type:
-		
-		Student
-     -->
-    	<property name="id" value="1000"/>
+    	<!-- <property name="id" value="1000"/>
     	<property name="name" value="Ram"/>
-    	<property name="marks" value="80"/>
+    	<property name="marks" value="80"/> -->
+    	<constructor-arg value="8080"/>
+    	<constructor-arg value="Ash"/>
+    	<constructor-arg value="90"/>
+    	<!-- Values are injected through the constructor instead of setter methods. -->
     </bean>
 </beans>
