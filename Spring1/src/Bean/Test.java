@@ -12,7 +12,7 @@ public class Test {
 		Resource rc=new ClassPathResource("SpringConfig.xml");
 //		BeanFactory bn=new XmlBeanFactory(rc);
 		ApplicationContext bn=new ClassPathXmlApplicationContext("SpringConfig.xml");
-		Student s=(Student)bn.getBean("obj");
+		College s=(College)bn.getBean("obj1");
 //		System.out.println(s.getId()+" "+s.getName()+" "+s.getMarks());
 		System.out.println(s);
 	}

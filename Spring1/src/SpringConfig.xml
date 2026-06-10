@@ -18,4 +18,16 @@
     	<constructor-arg value="90"/>
     	<!-- Values are injected through the constructor instead of setter methods. -->
     </bean>
+    <bean id="obj1" class="Bean.College">
+    	<!-- <property name="cid" value="1010"/>
+    	<property name="cname" value="sam"/>
+    	<property name="cloc" value="well"/>
+    	<property name="s" ref="obj"/> -->
+    	<constructor-arg value="2020"/>
+    	<constructor-arg value="sam"/>
+    	<constructor-arg value="hill"/>
+    	<constructor-arg>
+    		<ref bean="obj"/>
+    	</constructor-arg>
+    </bean>
 </beans>

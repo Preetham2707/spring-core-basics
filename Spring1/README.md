@@ -2,14 +2,20 @@
 
 This project demonstrates the fundamental concepts of the Spring Framework.
 
+
 ## Concepts Covered
 
 * Bean
-* Inversion of Control (IoC)
-* Dependency Injection (Setter Injection)
-* BeanFactory
-* Spring Container
-* XML Configuration
+* IoC (Inversion of Control)
+- Dependency Injection
+  - Setter Injection
+  - Constructor Injection
+- Bean-to-Bean Injection
+- Reference Injection
+- BeanFactory
+- ApplicationContext
+- Spring Container
+- XML Configuration
 
 ## Technologies Used
 
