@@ -16,6 +16,10 @@ This project demonstrates the fundamental concepts of the Spring Framework.
 - ApplicationContext
 - Spring Container
 - XML Configuration
+- Collection Injection
+  - List Injection
+  - Set Injection
+  - Map Injection
 
 ## Technologies Used
 
