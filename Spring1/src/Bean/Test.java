@@ -9,7 +9,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Resource rc=new ClassPathResource("SpringConfig.xml");
+//		Resource rc=new ClassPathResource("SpringConfig.xml");
 //		BeanFactory bn=new XmlBeanFactory(rc);
 		ApplicationContext bn=new ClassPathXmlApplicationContext("SpringConfig.xml");
 		College s=(College)bn.getBean("obj1");
