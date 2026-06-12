@@ -12,5 +12,8 @@
 	<classpathentry kind="lib" path="C:/Users/Preetham Reddy/Downloads/spring-context-5.3.37.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Preetham Reddy/Downloads/spring-beans-5.3.37.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Preetham Reddy/Downloads/spring-core-5.3.37.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Preetham Reddy/Downloads/spring-tx-5.3.37.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Preetham Reddy/Downloads/spring-jdbc-5.3.37.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Preetham Reddy/Downloads/mysql-connector-j-9.7.0/mysql-connector-j-9.7.0/mysql-connector-j-9.7.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
