@@ -1,44 +1,98 @@
-# Spring Core Basics
+# Spring Learning Repository
 
-This project demonstrates the fundamental concepts of the Spring Framework.
-
-
-## Concepts Covered
-
-* Bean
-* IoC (Inversion of Control)
-- Dependency Injection
-  - Setter Injection
-  - Constructor Injection
-- Bean-to-Bean Injection
-- Reference Injection
-- BeanFactory
-- ApplicationContext
-- Spring Container
-- XML Configuration
-- Collection Injection
-  - List Injection
-  - Set Injection
-  - Map Injection
+A collection of Spring Framework examples covering core concepts, dependency injection, collection injection, and database connectivity using Spring JDBC.
 
 ## Technologies Used
 
-* Java
-* Spring Framework
+* Java 8
+* Spring Core
+* Spring JDBC
+* MySQL
+* Maven
 * Eclipse IDE
 
-## Project Structure
+## Projects Included
 
-* Student.java – Bean class
-* Test.java – Main class to retrieve bean from Spring Container
-* SpringConfig.xml – Spring XML configuration
+### 1. Spring Core - Collection Injection
 
-## Output
+Demonstrates Spring Dependency Injection using XML configuration.
 
-1000 Ram 80.0
+**Concepts Covered:**
 
-## Author
+* Setter Injection
+* Constructor Injection
+* List Injection
+* Set Injection
+* Map Injection
+* Bean Relationships
 
-Preetham Reddy Kallem
+**Classes:**
 
-Aspiring Java Full Stack Developer | Learning Spring Framework and DSA
+* Student
+* College
+
+---
+
+### 2. Spring JDBC - Employee Management
+
+Demonstrates database connectivity using Spring JDBC and JdbcTemplate.
+
+**Concepts Covered:**
+
+* DataSource Configuration
+* JdbcTemplate
+* Dependency Injection
+* DAO Pattern
+* MySQL Integration
+
+**Classes:**
+
+* Employee
+* EmployeeDao
+
+---
+
+## Repository Structure
+
+```text
+Spring1
+│
+├── com.collegemanagement
+│   ├── Application.java
+│   └── model
+│       ├── College.java
+│       └── Student.java
+│
+├── com.employeemanagement
+│   ├── Application.java
+│   ├── model
+│   │   └── Employee.java
+│   └── dao
+│       └── EmployeeDao.java
+│
+├── applicationContext.xml
+├── jdbcContext.xml
+└── README.md
+```
+
+## Learning Objectives
+
+This repository was created to practice and understand:
+
+* Spring IoC Container
+* Dependency Injection
+* XML-Based Configuration
+* Collection Injection
+* Spring JDBC
+* JdbcTemplate
+* Database Operations
+* DAO Design Pattern
+
+## Future Enhancements
+
+* Spring Autowiring
+* Spring Annotations
+* Spring AOP
+* Spring MVC
+* Spring Boot
+* Spring Data JPA

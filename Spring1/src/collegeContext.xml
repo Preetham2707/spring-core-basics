@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Student Bean -->
+
+    <bean id="student" class="com.collegemanagement.model.Student">
+
+        <property name="studentId" value="1000"/>
+        <property name="studentName" value="Ram"/>
+        <property name="marks" value="80"/>
+
+        <property name="roomNumbers">
+            <set>
+                <value>101</value>
+                <value>102</value>
+            </set>
+        </property>
+
+        <property name="subjects">
+            <list>
+                <value>Java</value>
+                <value>Python</value>
+                <value>Ruby</value>
+            </list>
+        </property>
+
+    </bean>
+
+    <!-- College Bean -->
+
+    <bean id="college" class="com.collegemanagement.model.College">
+
+        <constructor-arg value="2020"/>
+        <constructor-arg value="ABC College"/>
+        <constructor-arg value="Mumbai"/>
+        <constructor-arg ref="student"/>
+
+        <constructor-arg>
+            <map>
+                <entry key="201" value="Center A"/>
+                <entry key="202" value="Center B"/>
+            </map>
+        </constructor-arg>
+
+    </bean>
+
+</beans>
